@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page">
     <header class="page__header header">
@@ -53,15 +54,13 @@
         </ul>
       </section>
       <section class="product-top">
-        <h2 class="product-top__header">
+        <h2 class="product-top__header product-top__header--hit">
           Вязанные корзинки
         </h2>
-        <span class="product-top__text-hit">
-          Товар недели
-        </span>
         <p class="product-top__description">
           Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
         </p>
+        <!-- можно ли оставить таблицу на html или лучше сделать таблицу на css? -->
         <table class="product-top__property property">
           <tr class="property__row">
             <td class="property__cell">
@@ -181,7 +180,7 @@
           <span class="visually-hidden">
             Показать предыдущий отзыв
           </span>
-          <svg width="50" height="26" viewBox="0 0 50 26" xmlns="http://www.w3.org/2000/svg">
+          <svg class="button__icon" width="50" height="26" viewBox="0 0 50 26" xmlns="http://www.w3.org/2000/svg">
             <path d="M50 11H7.7L15.8 2.8L13 0L0 13L13 26L15.8 23.2L7.7 15H50V11Z"/>
           </svg>
         </button>
@@ -189,7 +188,7 @@
           <span class="visually-hidden">
             Показать следующий отзыв
           </span>
-          <svg width="50" height="26" viewBox="0 0 50 26" xmlns="http://www.w3.org/2000/svg">
+          <svg class="button__icon" width="50" height="26" viewBox="0 0 50 26" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 11H42.3L34.2 2.8L37 0L50 13L37 26L34.2 23.2L42.3 15H0V11Z"/>
           </svg>
         </button>

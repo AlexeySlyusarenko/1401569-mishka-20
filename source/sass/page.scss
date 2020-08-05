@@ -1,0 +1,28 @@
+.page {
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: $white;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: normal;
+}
+
+.page__header {
+  position: relative;
+  width: 100%;
+}
+
+.page__content {
+  position: relative;
+  width: 100%;
+}
+
+.page__footer {
+  position: relative;
+  width: 100%;
+}
