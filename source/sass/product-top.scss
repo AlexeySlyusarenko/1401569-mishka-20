@@ -1,4 +1,4 @@
-.product-top{
+.product-top {
   padding: 30px;
 }
 
@@ -16,7 +16,7 @@
   color: $green-light;
 }
 
-.product-top__header--hit:after {
+.product-top__header--hit::after {
   content: "Товар недели";
 }
 
@@ -36,4 +36,3 @@
   line-height: 24px;
   color: $dark;
 }
-
