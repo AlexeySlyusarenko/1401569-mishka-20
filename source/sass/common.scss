@@ -1,7 +1,18 @@
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
+    clip: rect(0 0 0 0);
+    /* Закомментировал, т.к. после футера добавляется свободное пространство */
+    /* width: 1px; */
+    height: 1px;
+    margin: -1px;
 }

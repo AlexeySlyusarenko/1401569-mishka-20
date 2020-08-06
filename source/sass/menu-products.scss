@@ -3,8 +3,25 @@
 }
 
 .menu-products__header {
+  margin: 0;
+  padding: 90px 30px 120px 30px;
+  background-color: $white-light;
+  background-image: url('../img/hero-mobile@1x.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  text-align: center;
+  vertical-align: middle;
   font-weight: bold;
   font-size: 27px;
   line-height: 30px;
   color: $black;
+}
+
+.menu-products__item:nth-child(2n) {
+  background-color: $green;
+}
+
+.menu-products__item:nth-child(2n + 1) {
+  background-color: $green-light;
 }

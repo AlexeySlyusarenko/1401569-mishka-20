@@ -3,8 +3,21 @@
 }
 
 .catalog__header {
+  background-color: $white-dark;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  vertical-align: middle;
   font-weight: bold;
   font-size: 27px;
   line-height: 30px;
   color: $black;
+}
+
+.catalog__list {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 30px;
+  box-sizing: border-box;
 }

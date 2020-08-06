@@ -1,13 +1,14 @@
 .page {
   position: relative;
   width: 100%;
+  min-width: 320px;
   min-height: 100%;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: flex-start;
   background-color: $white;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
 }

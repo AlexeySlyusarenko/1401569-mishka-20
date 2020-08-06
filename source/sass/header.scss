@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.header__button-menu {
+  position: absolute;
+  right: 45px;
+  margin: auto 0;
+  width: 20px;
+  height: 14px;
+  background: url('../img/icon-menu-open.svg') no-repeat center;
+  border: none;
+}
+
+.header__button-menu--close {
+  background-image: url('../img/icon-menu-close.svg');
+}

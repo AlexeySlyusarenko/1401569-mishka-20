@@ -1,5 +1,5 @@
 .product-top{
-
+  padding: 30px;
 }
 
 .product-top__header {
@@ -24,6 +24,10 @@
   font-size: 15px;
   line-height: 24px;
   color: $dark;
+}
+
+.product-top__img {
+  background-color: $green-light;
 }
 
 .product-top__price {
