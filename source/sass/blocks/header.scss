@@ -11,12 +11,10 @@
   position: absolute;
   right: 45px;
   margin: auto 0;
-  width: 20px;
-  height: 14px;
-  background: url("../img/icon-menu-open.svg") no-repeat center;
   border: none;
+  background: none;
 }
 
-.header__button-menu--close {
-  background-image: url("../img/icon-menu-close.svg");
+.header__button-menu-icon {
+  fill: $black-light;
 }
