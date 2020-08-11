@@ -1,0 +1,16 @@
+.developer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.developer__text {
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 18px;
+}
+
+.developer__logo {
+  fill: $green-light;
+}

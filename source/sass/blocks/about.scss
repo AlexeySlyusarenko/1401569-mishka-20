@@ -1,0 +1,21 @@
+.about {
+  padding: 30px;
+}
+
+.about__header {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  color: $black;
+}
+
+.about__item-logo {
+  fill: $green-light;
+}
+
+.about__item-text {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: $black;
+}

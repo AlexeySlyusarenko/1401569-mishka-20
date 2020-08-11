@@ -1,0 +1,27 @@
+// .product-card {
+
+// }
+
+.product-card__header {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: $black;
+}
+
+.product-card__description {
+  font-size: 13px;
+  line-height: 30px;
+  color: $dark;
+}
+
+.product-card__price {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 24px;
+  color: $dark;
+}
+
+.product-card__button-order-icon {
+  fill: $black-alfa-2;
+}

@@ -1,0 +1,38 @@
+.product-top {
+  padding: 30px;
+}
+
+.product-top__header {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  color: $black;
+}
+
+.product-top__header--hit {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 20px;
+  color: $green-light;
+}
+
+.product-top__header--hit::after {
+  content: "Товар недели";
+}
+
+.product-top__description {
+  font-size: 15px;
+  line-height: 24px;
+  color: $dark;
+}
+
+.product-top__img {
+  background-color: $green-light;
+}
+
+.product-top__price {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: $dark;
+}

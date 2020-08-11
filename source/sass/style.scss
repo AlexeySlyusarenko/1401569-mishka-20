@@ -1,1 +1,23 @@
-// Начните писать стили здесь
+@import "font.scss";
+@import "normalize.scss";
+@import "common.scss";
+@import "var-color.scss";
+@import "blocks/page.scss";
+@import "blocks/header.scss";
+@import "blocks/logo.scss";
+@import "blocks/menu-products.scss";
+@import "blocks/products.scss";
+@import "blocks/product-top.scss";
+@import "blocks/property.scss";
+@import "blocks/button.scss";
+@import "blocks/about.scss";
+@import "blocks/feedback.scss";
+@import "blocks/contact.scss";
+@import "blocks/catalog.scss";
+@import "blocks/product-card.scss";
+@import "blocks/process.scss";
+@import "blocks/form-order.scss";
+@import "blocks/form.scss";
+@import "blocks/footer.scss";
+@import "blocks/social.scss";
+@import "blocks/developer.scss";
