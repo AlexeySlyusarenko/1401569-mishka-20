@@ -1,3 +1,45 @@
-// .form {
+.form {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  margin: 0;
+  padding: 0;
+}
 
-// }
+.form__legend {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  color: $green-light;
+}
+
+.form__input-area-label {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+  color: $black;
+}
+
+.form__input-area-text::placeholder {
+  font-size: 17px;
+  line-height: 18px;
+  color: $black-alfa-3;
+}
+
+.form__textarea {
+  padding: 17px;
+}
+
+.form__textarea::placeholder {
+  font-size: 17px;
+  line-height: 18px;
+  color: $black-alfa-3;
+}
+
+.form__text {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 16px;
+  color: $dark;
+}
