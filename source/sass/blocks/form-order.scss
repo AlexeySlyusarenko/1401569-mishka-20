@@ -2,17 +2,28 @@
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: stretch;
   margin: 0;
-  padding: 30px;
+}
+
+.form-order__menu {
+  display: none;
+  padding: 0 30px;
+  background-color: $white-dark;
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
 }
 
 .form-order__header {
   margin: 0;
-  padding: 0;
+  padding: 30px 30px 60px 30px;
+  background-color: $white-dark;
   font-weight: bold;
   font-size: 27px;
   line-height: 30px;
+  text-align: center;
   color: $black;
 }
 

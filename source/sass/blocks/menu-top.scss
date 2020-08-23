@@ -1,0 +1,31 @@
+.menu-top {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.menu-top-item {
+  padding: 30px;
+}
+
+.menu-top-item:first-child {
+  padding-left: 0;
+}
+
+.menu-top-item--delivery {
+  padding-right: 0;
+  margin: 0 0 0 auto;
+}
+
+.menu-top-item-link {
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 24px;
+  color: $black;
+}
+
+.menu-top-item--delivery .menu-top-item-link {
+  font-weight: normal;
+  color: $dark;
+}

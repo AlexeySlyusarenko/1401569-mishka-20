@@ -6,4 +6,18 @@
   padding: 30px;
   background-color: $white-dark;
   box-sizing: border-box;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.footer__logo {
+  display: none;
+  fill: $black;
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
 }

@@ -1,11 +1,24 @@
-// .catalog {
+.catalog {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+}
 
-// }
+.catalog__menu {
+  display: none;
+  padding: 0 30px;
+  background-color: $white-dark;
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
+}
 
 .catalog__header {
-  background-color: $white-dark;
   margin: 0;
   padding: 20px;
+  background-color: $white-dark;
   text-align: center;
   vertical-align: middle;
   font-weight: bold;
@@ -15,9 +28,12 @@
 }
 
 .catalog__list {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
   padding: 30px;
-  box-sizing: border-box;
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }

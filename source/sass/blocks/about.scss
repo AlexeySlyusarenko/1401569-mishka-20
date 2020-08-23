@@ -1,5 +1,16 @@
 .about {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
   padding: 30px;
+
+  @media (min-width: $tablet) {
+    padding: 50px 30px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 60px 300px;
+  }
 }
 
 .about__header {
@@ -7,6 +18,25 @@
   font-size: 25px;
   line-height: 30px;
   color: $black;
+
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.about__list {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $tablet) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .about__item-logo {
@@ -18,4 +48,9 @@
   font-size: 17px;
   line-height: 20px;
   color: $black;
+
+  @media (min-width: $tablet) {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }

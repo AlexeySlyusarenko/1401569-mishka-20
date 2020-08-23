@@ -1,10 +1,15 @@
 .header {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
   align-items: center;
   padding: 30px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .header__button-menu {
@@ -15,6 +20,71 @@
   background: none;
 }
 
+.header__list-menu {
+  display: none;
+  flex-flow: column nowrap;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+  }
+}
+
+.header--menu-show .header__list-menu {
+  @media (max-width: $tablet) {
+    display: flex;
+  }
+}
+
+.header__list-menu--show-desktop {
+  @media (min-width: $desktop) {
+    order: -1;
+    display: flex;
+  }
+}
+
+.header__list-menu--show-tablet {
+  @media (min-width: $tablet) {
+    display: flex;
+  }
+}
+
+.header__link-menu {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: $black;
+}
+
+.header__link-menu-icon {
+  fill: $black-alfa-2;
+}
+
+.header__link-menu-text {
+  color: $black;
+}
+
 .header__button-menu-icon {
   fill: $black-light;
+}
+
+.header__button-menu-icon--show {
+  display: none;
+
+  @media (max-width: $tablet) {
+    display: block;
+  }
+}
+
+.header--menu-show .header__button-menu-icon--show {
+  display: none;
+}
+
+.header__button-menu-icon--close {
+  display: none;
+}
+
+.header--menu-show .header__button-menu-icon--close {
+  @media (max-width: $tablet) {
+    display: block;
+  }
 }
