@@ -1,0 +1,13 @@
+@mixin adaptive-width {
+  @media (max-width: $tablet) {
+    width: $mobile;
+  }
+
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    width: $tablet;
+  }
+
+  @media (min-width: $desktop) {
+    width: $desktop;
+  }
+}

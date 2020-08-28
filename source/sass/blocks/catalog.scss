@@ -1,24 +1,32 @@
 .catalog {
+  position: relative;
   display: flex;
   flex-flow: column nowrap;
-  justify-content: flex-start;
-  align-items: stretch;
+  justify-content: stretch;
+  align-items: center;
 }
 
-.catalog__menu {
-  display: none;
-  padding: 0 30px;
+.catalog__header {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100%;
   background-color: $white-dark;
+}
+
+.catalog__header-menu {
+  display: none;
 
   @media (min-width: $tablet) {
     display: block;
   }
+
+  @include adaptive-width;
 }
 
-.catalog__header {
+.catalog__header-text {
   margin: 0;
   padding: 20px;
-  background-color: $white-dark;
   text-align: center;
   vertical-align: middle;
   font-weight: bold;
@@ -36,4 +44,6 @@
   @media (min-width: $desktop) {
     grid-template-columns: 1fr 1fr 1fr;
   }
+
+  @include adaptive-width;
 }

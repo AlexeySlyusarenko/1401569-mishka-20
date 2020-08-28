@@ -1,8 +1,16 @@
 .header {
   display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.header__wrapper {
+  display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: center;
+  position: relative;
   padding: 30px;
   box-sizing: border-box;
 
@@ -10,11 +18,14 @@
     flex-direction: row;
     justify-content: space-between;
   }
+
+  @include adaptive-width;
 }
 
 .header__button-menu {
   position: absolute;
-  right: 45px;
+  top: 35px;
+  right: 30px;
   margin: auto 0;
   border: none;
   background: none;

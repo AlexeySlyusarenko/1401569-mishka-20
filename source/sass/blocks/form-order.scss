@@ -6,20 +6,27 @@
   margin: 0;
 }
 
-.form-order__menu {
-  display: none;
-  padding: 0 30px;
+.form-order__header {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100%;
   background-color: $white-dark;
+}
+
+.form-order__header-menu {
+  display: none;
 
   @media (min-width: $tablet) {
     display: block;
   }
+
+  @include adaptive-width;
 }
 
-.form-order__header {
+.form-order__header-text {
   margin: 0;
   padding: 30px 30px 60px 30px;
-  background-color: $white-dark;
   font-weight: bold;
   font-size: 27px;
   line-height: 30px;

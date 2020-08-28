@@ -3,29 +3,33 @@
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: center;
+  padding: 30px;
+  box-sizing: border-box;
+
+  @include adaptive-width;
 }
 
-.menu-top-item {
+.menu-top__item {
   padding: 30px;
 }
 
-.menu-top-item:first-child {
+.menu-top__item:first-child {
   padding-left: 0;
 }
 
-.menu-top-item--delivery {
+.menu-top__item--delivery {
   padding-right: 0;
   margin: 0 0 0 auto;
 }
 
-.menu-top-item-link {
+.menu-top__item-link {
   font-weight: bold;
   font-size: 15px;
   line-height: 24px;
   color: $black;
 }
 
-.menu-top-item--delivery .menu-top-item-link {
+.menu-top__item--delivery .menu-top__item-link {
   font-weight: normal;
   color: $dark;
 }

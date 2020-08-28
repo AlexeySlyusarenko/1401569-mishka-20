@@ -1,16 +1,23 @@
 .footer {
   display: flex;
+  justify-content: center;
+  background-color: $white-dark;
+}
+
+.footer__wrapper {
+  display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: stretch;
   padding: 30px;
-  background-color: $white-dark;
-  box-sizing: border-box;
 
   @media (min-width: $tablet) {
     flex-direction: row;
     justify-content: space-between;
+    padding: 50px 30px;
   }
+
+  @include adaptive-width;
 }
 
 .footer__logo {
