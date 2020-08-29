@@ -3,7 +3,9 @@
   flex-flow: row nowrap;
   justify-content: center;
   align-items: stretch;
-  box-shadow: 0px 1px 0px $white-light, inset 0px 1px 0px $white-light;
+  box-shadow:
+    0 1px 0 $white-light,
+    inset 0 1px 0 $white-light;
 
   @media (min-width: $tablet) {
     border-bottom: 1px solid $black-alfa-1;
