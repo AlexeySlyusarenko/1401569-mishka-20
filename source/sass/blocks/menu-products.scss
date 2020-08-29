@@ -1,21 +1,75 @@
-// .menu-products {
-
-// }
-
-.menu-products__header {
-  margin: 0;
-  padding: 90px 30px 120px 30px;
-  background-color: $white-light;
+.menu-products {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-color: #f9f9f9;
   background-image: url("../img/hero-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
-  background-size: cover;
+  background-size: auto;
+}
+
+.menu-products__wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100%;
+
+  @include adaptive-width;
+}
+
+.menu-products__header-menu {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
+
+  @include adaptive-width;
+}
+
+.menu-products__header-text {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 90px 30px 120px 30px;
   text-align: center;
   vertical-align: middle;
   font-weight: bold;
   font-size: 27px;
   line-height: 30px;
   color: $black;
+
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    font-size: 43px;
+    line-height: 50px;
+    padding-bottom: 372px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 53px;
+    line-height: 57px;
+    padding-bottom: 355px;
+  }
+}
+
+.menu-products__list {
+  align-self: stretch;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: stretch;
+  align-items: stretch;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet) {
+    flex-flow: row nowrap;
+  }
+}
+
+.menu-products__item {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .menu-products__item:nth-child(2n) {

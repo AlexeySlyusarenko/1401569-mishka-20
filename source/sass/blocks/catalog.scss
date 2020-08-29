@@ -1,9 +1,30 @@
-// .catalog {
-
-// }
+.catalog {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: stretch;
+  align-items: center;
+}
 
 .catalog__header {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100%;
   background-color: $white-dark;
+}
+
+.catalog__header-menu {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
+
+  @include adaptive-width;
+}
+
+.catalog__header-text {
   margin: 0;
   padding: 20px;
   text-align: center;
@@ -15,9 +36,14 @@
 }
 
 .catalog__list {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
   padding: 30px;
-  box-sizing: border-box;
+
+  @media (min-width: $desktop) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @include adaptive-width;
 }

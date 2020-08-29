@@ -1,5 +1,4 @@
 .button {
-  flex-grow: 1;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -11,6 +10,10 @@
   line-height: 20px;
   color: $dark;
   border: 2px solid $dark;
+
+  @media (min-width: $tablet) {
+    font-size: 17px;
+  }
 }
 
 .button--border-light {

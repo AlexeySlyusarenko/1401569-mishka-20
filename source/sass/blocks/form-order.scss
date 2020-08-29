@@ -2,17 +2,35 @@
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: stretch;
   margin: 0;
-  padding: 30px;
 }
 
 .form-order__header {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 100%;
+  background-color: $white-dark;
+}
+
+.form-order__header-menu {
+  display: none;
+
+  @media (min-width: $tablet) {
+    display: block;
+  }
+
+  @include adaptive-width;
+}
+
+.form-order__header-text {
   margin: 0;
-  padding: 0;
+  padding: 30px 30px 60px 30px;
   font-weight: bold;
   font-size: 27px;
   line-height: 30px;
+  text-align: center;
   color: $black;
 }
 

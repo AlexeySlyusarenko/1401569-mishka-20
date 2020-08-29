@@ -1,0 +1,19 @@
+@mixin adaptive-width {
+  box-sizing: border-box;
+
+  @media (max-width: $tablet) {
+    width: $mobile;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: $tablet) {
+    width: $tablet;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media (min-width: $desktop) {
+    width: $desktop;
+  }
+}

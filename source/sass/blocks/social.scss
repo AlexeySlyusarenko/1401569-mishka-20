@@ -3,6 +3,24 @@
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
+  margin-bottom: 22px;
+  padding-bottom: 27px;
+  border-bottom: 1px solid $white-light-1;
+
+  @media (min-width: $tablet) {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.social__item {
+  margin-right: 40px;
+  fill: $black-light;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .social__logo {

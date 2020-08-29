@@ -5,3 +5,27 @@
 .logo__img {
   fill: $black;
 }
+
+.logo__img--mobile {
+  display: none;
+
+  @media (max-width: $tablet) {
+    display: block;
+  }
+}
+
+.logo__img--tablet {
+  display: none;
+
+  @media (min-width: $tablet) and (max-width: $desktop) {
+    display: block;
+  }
+}
+
+.logo__img--desktop {
+  display: none;
+
+  @media (min-width: $desktop) {
+    display: block;
+  }
+}

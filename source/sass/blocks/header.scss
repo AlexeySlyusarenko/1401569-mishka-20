@@ -2,19 +2,135 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
+  align-items: stretch;
+  box-shadow:
+    0 1px 0 $white-light,
+    inset 0 1px 0 $white-light;
+
+  @media (min-width: $tablet) {
+    border-bottom: 1px solid $black-alfa-1;
+    box-shadow: none;
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
   align-items: center;
-  padding: 30px;
-  box-sizing: border-box;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @include adaptive-width;
+}
+
+.header__logo {
+  padding: 22px 0;
+
+  @media (min-width: $tablet) {
+    padding: 22px 0 20px 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 9px 0 7px 0;
+  }
 }
 
 .header__button-menu {
   position: absolute;
-  right: 45px;
+  top: 35px;
+  right: 30px;
   margin: auto 0;
   border: none;
   background: none;
 }
 
+.header__list-menu {
+  display: none;
+  flex-flow: column nowrap;
+  height: 100%;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+  }
+}
+
+.header--menu-show .header__list-menu {
+  @media (max-width: $tablet) {
+    display: flex;
+  }
+}
+
+.header__list-menu--show-desktop {
+  @media (min-width: $desktop) {
+    order: -1;
+    display: flex;
+  }
+}
+
+.header__list-menu--show-tablet {
+  @media (min-width: $tablet) {
+    display: flex;
+  }
+}
+
+.header__item-menu {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-left: 1px solid $black-alfa-1;
+}
+
+.header__list-menu--show-desktop .header__item-menu:first-child {
+  padding-left: 0;
+  border-left: none;
+}
+
+.header__link-menu {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  color: $black;
+}
+
+.header__link-menu-icon {
+  fill: $black-alfa-2;
+}
+
+.header__link-menu-text {
+  padding-left: 30px;
+  color: $black;
+}
+
 .header__button-menu-icon {
   fill: $black-light;
+}
+
+.header__button-menu-icon--show {
+  display: none;
+
+  @media (max-width: $tablet) {
+    display: block;
+  }
+}
+
+.header--menu-show .header__button-menu-icon--show {
+  display: none;
+}
+
+.header__button-menu-icon--close {
+  display: none;
+}
+
+.header--menu-show .header__button-menu-icon--close {
+  @media (max-width: $tablet) {
+    display: block;
+  }
 }
