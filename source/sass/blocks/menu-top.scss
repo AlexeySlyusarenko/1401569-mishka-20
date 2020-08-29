@@ -3,10 +3,6 @@
   flex-flow: row nowrap;
   justify-content: flex-start;
   align-items: center;
-  padding: 30px;
-  box-sizing: border-box;
-
-  @include adaptive-width;
 }
 
 .menu-top__item {

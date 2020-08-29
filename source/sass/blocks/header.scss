@@ -3,6 +3,12 @@
   flex-flow: row nowrap;
   justify-content: center;
   align-items: stretch;
+  box-shadow: 0px 1px 0px $white-light, inset 0px 1px 0px $white-light;
+
+  @media (min-width: $tablet) {
+    border-bottom: 1px solid $black-alfa-1;
+    box-shadow: none;
+  }
 }
 
 .header__wrapper {
@@ -11,8 +17,6 @@
   justify-content: flex-start;
   align-items: center;
   position: relative;
-  padding: 30px;
-  box-sizing: border-box;
 
   @media (min-width: $tablet) {
     flex-direction: row;
@@ -20,6 +24,18 @@
   }
 
   @include adaptive-width;
+}
+
+.header__logo {
+  padding: 22px 0;
+
+  @media (min-width: $tablet) {
+    padding: 22px 0 20px 0;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 9px 0 7px 0;
+  }
 }
 
 .header__button-menu {
@@ -34,6 +50,7 @@
 .header__list-menu {
   display: none;
   flex-flow: column nowrap;
+  height: 100%;
 
   @media (min-width: $tablet) {
     flex-direction: row;
@@ -59,7 +76,22 @@
   }
 }
 
+.header__item-menu {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-left: 1px solid $black-alfa-1;
+}
+
+.header__list-menu--show-desktop .header__item-menu:first-child {
+  padding-left: 0;
+  border-left: none;
+}
+
 .header__link-menu {
+  display: flex;
+  align-items: center;
   font-weight: bold;
   font-size: 17px;
   line-height: 24px;
@@ -71,6 +103,7 @@
 }
 
 .header__link-menu-text {
+  padding-left: 30px;
   color: $black;
 }
 

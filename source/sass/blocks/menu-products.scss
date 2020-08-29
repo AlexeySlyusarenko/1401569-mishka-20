@@ -24,6 +24,8 @@
   @media (min-width: $tablet) {
     display: block;
   }
+
+  @include adaptive-width;
 }
 
 .menu-products__header-text {
