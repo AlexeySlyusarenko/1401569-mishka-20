@@ -1,19 +1,43 @@
-@mixin adaptive-width {
+@mixin adaptive-width($pad-mobile: 30px, $pad-tablet: 50px, $pad-desktop: 50px) {
   box-sizing: border-box;
 
   @media (max-width: $tablet) {
     width: $mobile;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: $pad-mobile;
+    padding-right: $pad-mobile;
   }
 
   @media (min-width: $tablet) {
     width: $tablet;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: $pad-tablet;
+    padding-right: $pad-tablet;
   }
 
   @media (min-width: $desktop) {
     width: $desktop;
+    padding-left: $pad-desktop;
+    padding-right: $pad-desktop;
+  }
+}
+
+@mixin adaptive-width-desktop($pad-mobile: 30px, $pad-tablet: 50px, $pad-desktop-1: 100px, $pad-desktop-2: 225px) {
+  box-sizing: border-box;
+
+  @media (max-width: $tablet) {
+    width: $mobile;
+    padding-left: $pad-mobile;
+    padding-right: $pad-mobile;
+  }
+
+  @media (min-width: $tablet) {
+    width: $tablet;
+    padding-left: $pad-tablet;
+    padding-right: $pad-tablet;
+  }
+
+  @media (min-width: $desktop) {
+    width: $desktop;
+    padding-left: $pad-desktop-1;
+    padding-right: $pad-desktop-2;
   }
 }
