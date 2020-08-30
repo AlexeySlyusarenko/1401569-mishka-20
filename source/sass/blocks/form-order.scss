@@ -2,7 +2,7 @@
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
-  align-items: stretch;
+  align-items: center;
   margin: 0;
 }
 
@@ -32,10 +32,34 @@
   line-height: 30px;
   text-align: center;
   color: $black;
+
+  @media (min-width: $tablet) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .form-order__description {
+  margin: 30px 0;
+  padding: 0;
   font-size: 13px;
   line-height: 24px;
   color: $dark;
+
+  @media (min-width: $tablet) {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @include adaptive-width(30px, 50px, 225px);
+}
+
+.form-order__form {
+  position: relative;
+  width: 100%;
 }

@@ -151,96 +151,116 @@
         </p>
         <form class="form-order__form form" action="https://echo.htmlacademy.ru">
           <fieldset class="form__fieldset">
-            <legend class="form__legend">
-              Тип
-            </legend>
-            <div class="form__input-area-wrapper">
-              <label class="form__input-area-label">
-                <input type="radio" class="visually-hidden" name="type" value="0" checked>
-                <span class="form__radio-icon"></span>
-                Аксессуар для интерьера
-              </label>
-              <label class="form__input-area-label">
-                <input type="radio" class="visually-hidden" name="type" value="1">
-                <span class="form__radio-icon"></span>
-                Детская игрушка
-              </label>
+            <div class="form__fieldset-wrapper">
+              <legend class="form__legend">
+                Тип
+              </legend>
+              <div class="form__input-area-wrapper">
+                <label class="form__input-area-label">
+                  <input type="radio" class="visually-hidden" name="type" value="0" checked>
+                  <span class="form__radio-icon"></span>
+                  Аксессуар для интерьера
+                </label>
+                <label class="form__input-area-label">
+                  <input type="radio" class="visually-hidden" name="type" value="1">
+                  <span class="form__radio-icon"></span>
+                  Детская игрушка
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <fieldset class="form__fieldset form__fieldset--bg-dark">
+            <div class="form__fieldset-wrapper">
+              <legend class="form__legend">
+                Цвет
+              </legend>
+              <div class="form__input-area-wrapper form__input-area-wrapper--grid">
+                <label class="form__input-area-label">
+                  <input type="radio" class="visually-hidden" name="color-white" checked>
+                  <span class="form__checkbox-icon"></span>
+                  Белый
+                </label>
+                <label class="form__input-area-label">
+                  <input type="radio" class="visually-hidden" name="color-grey" checked>
+                  <span class="form__checkbox-icon"></span>
+                  Серый
+                </label>
+                <label class="form__input-area-label">
+                  <input type="radio" class="visually-hidden" name="color-tiffany">
+                  <span class="form__checkbox-icon"></span>
+                  «Тиффани»
+                </label>
+                <label class="form__input-area-label">
+                  <input type="radio" class="visually-hidden" name="color-black">
+                  <span class="form__checkbox-icon"></span>
+                  Черный
+                </label>
+                <label class="form__input-area-label">
+                  <input type="radio" class="visually-hidden" name="color-pink">
+                  <span class="form__checkbox-icon"></span>
+                  Розовый
+                </label>
+                <label class="form__input-area-label">
+                  <input type="radio" class="visually-hidden" name="color-orange">
+                  <span class="form__checkbox-icon"></span>
+                  Оранжевый
+                </label>
+              </div>
             </div>
           </fieldset>
           <fieldset class="form__fieldset">
-            <legend class="form__legend">
-              Цвет
-            </legend>
-            <div class="form__input-area-wrapper">
-              <label class="form__input-area-label">
-                <input type="radio" class="visually-hidden" name="color-white" checked>
-                <span class="form__checkbox-icon"></span>
-                Белый
-              </label>
-              <label class="form__input-area-label">
-                <input type="radio" class="visually-hidden" name="color-grey" checked>
-                <span class="form__checkbox-icon"></span>
-                Серый
-              </label>
-              <label class="form__input-area-label">
-                <input type="radio" class="visually-hidden" name="color-tiffany">
-                <span class="form__checkbox-icon"></span>
-                «Тиффани»
-              </label>
-              <label class="form__input-area-label">
-                <input type="radio" class="visually-hidden" name="color-black">
-                <span class="form__checkbox-icon"></span>
-                Черный
-              </label>
-              <label class="form__input-area-label">
-                <input type="radio" class="visually-hidden" name="color-pink">
-                <span class="form__checkbox-icon"></span>
-                Розовый
-              </label>
-              <label class="form__input-area-label">
-                <input type="radio" class="visually-hidden" name="color-orange">
-                <span class="form__checkbox-icon"></span>
-                Оранжевый
-              </label>
+            <div class="form__fieldset-wrapper">
+              <legend class="form__legend">
+                ФИО
+              </legend>
+              <div class="form__input-area-wrapper">
+                <label class="form__input-area-label">
+                  Имя:
+                  <input type="text" class="form__input-area-text" placeholder="Введите ваше имя*" name="name" required>
+                </label>
+                <label class="form__input-area-label">
+                  Фамилия:
+                  <input type="text" class="form__input-area-text" placeholder="Укажите фамилию*" name="surname" required>
+                </label>
+                <label class="form__input-area-label">
+                  Отчество:
+                  <input type="text" class="form__input-area-text" placeholder="Отчество, если желаете" name="patronymic">
+                </label>
+              </div>
             </div>
           </fieldset>
-          <fieldset class="form__fieldset">
-            <legend class="form__legend">
-              ФИО
-            </legend>
-            <div class="form__input-area-wrapper">
-              <label class="form__input-area-label">
-                Имя:
-                <input type="text" class="form__input-area-text" placeholder="Введите ваше имя*" name="name" required>
-              </label>
-              <label class="form__input-area-label">
-                Фамилия:
-                <input type="text" class="form__input-area-text" placeholder="Укажите фамилию*" name="surname" required>
-              </label>
-              <label class="form__input-area-label">
-                Отчество:
-                <input type="text" class="form__input-area-text" placeholder="Отчество, если желаете" name="patronymic">
-              </label>
+          <label class="form__fieldset form__fieldset--bg-dark">
+            <div class="form__fieldset-wrapper">
+              <span class="form__legend">
+                Тел
+              </span>
+              <input type="tel" class="form__input-area-text" placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="telephone" required>
             </div>
-          </fieldset>
-          <label class="form__legend">
-            Тел
-            <input type="tel" class="form__input-area-text" placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="telephone" required>
           </label>
-          <label class="form__legend">
-            E-mail
-            <input type="email" class="form__input-area-text" placeholder="Ваш Email*" name="e-mail" required>
+          <label class="form__fieldset form__fieldset--bg-dark">
+            <div class="form__fieldset-wrapper">
+              <span class="form__legend">
+                E-mail
+              </span>
+              <input type="email" class="form__input-area-text" placeholder="Ваш Email*" name="e-mail" required>
+            </div>
           </label>
-          <label class="form__legend">
-            Доп
-            <textarea class="form__textarea" placeholder="Опишите все ваши пожелания к заказу" name="feedback"></textarea>
+          <label class="form__fieldset">
+            <div class="form__fieldset-wrapper">
+              <span class="form__legend">
+                Доп
+              </span>
+              <textarea class="form__textarea" placeholder="Опишите все ваши пожелания к заказу" name="feedback"></textarea>
+            </div>
           </label>
-          <p class="form__text">
-            <sup>*</sup>Поля обязательны для заполнения
-          </p>
-          <button class="form__submit button" type="submit">
-            Отправить заказ
-          </button>
+          <div class="form__wrapper form__wrapper--horizont">
+            <p class="form__text">
+              <sup>*</sup>Поля обязательны для заполнения
+            </p>
+            <button class="form__submit button" type="submit">
+              Отправить заказ
+            </button>
+          </div>
         </form>
       </section>
     </main>
