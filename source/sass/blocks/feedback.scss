@@ -1,9 +1,29 @@
 .feedback {
   display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+.feedback__wrapper {
+  position: relative;
+  display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: stretch;
-  padding: 30px;
+
+  @media (min-width: $tablet) {
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding-top: 82px;
+    padding-bottom: 47px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 78px;
+    padding-bottom: 96px;
+  }
+
+  @include adaptive-width-desktop(30px, 50px, 225px, 50px);
 }
 
 .feedback__header {
@@ -13,6 +33,29 @@
   font-size: 25px;
   line-height: 30px;
   color: $black;
+
+  @media (min-width: $tablet) {
+    order: -2;
+  }
+}
+
+.feedback__img {
+  z-index: -1;
+  position: relative;
+  display: none;
+  height: 100%;
+
+  @media (min-width: $tablet) {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  @media (min-width: $desktop) {
+    display: block;
+    left: 50px;
+  }
 }
 
 .feedback__text {
@@ -23,7 +66,7 @@
   color: $dark;
 }
 
-.feedback__author {
+.feedback__name {
   margin: 0;
   padding: 0;
   font-weight: bold;
@@ -45,4 +88,10 @@
   flex-flow: row nowrap;
   justify-content: stretch;
   align-items: stretch;
+}
+
+.feedback__button-review {
+  @media (min-width: $tablet) {
+    order: -1;
+  }
 }
