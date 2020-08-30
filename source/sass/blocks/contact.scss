@@ -10,7 +10,7 @@
   display: grid;
   grid-template-columns: 1fr;
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     grid-template-columns: 1fr 527px;
   }
 
@@ -27,13 +27,13 @@
   padding-left: 30px;
   padding-right: 30px;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     grid-template-columns: 1fr 4fr 1fr 4fr;
     padding-left: 50px;
     padding-right: 50px;
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     grid-template-columns: 1fr 4fr;
     width: 300px;
     padding-left: 0;
@@ -51,7 +51,7 @@
   line-height: 30px;
   color: $black;
 
-  @media(min-width: $tablet) and (max-width: $desktop) {
+  @media (min-width: $tablet) and (max-width: $desktop) {
     grid-area: 1 / 1 / 2 / 5;
   }
 }
@@ -94,7 +94,7 @@
   height: 454px;
   margin-bottom: 30px;
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     grid-area: 1 / 2 / 3 / 3;
     margin-bottom: 0;
   }
@@ -113,11 +113,11 @@
   left: 140px; // 160px - 20px
   fill: $green-light-2;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     left: 364px; // 384px - 20px
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     left: 243px; // 263px - 20px
   }
 }
@@ -129,11 +129,11 @@
   width: 260px;
   margin: 0 auto;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     width: 230px;
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     justify-content: flex-start;
     margin: 0;
   }

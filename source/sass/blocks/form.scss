@@ -15,7 +15,7 @@
   border: none;
 
   &--bg-dark {
-    @media(min-width: $tablet) {
+    @media (min-width: $tablet) {
       background-color: $white-dark;
     }
   }
@@ -26,7 +26,7 @@
   flex-flow: column nowrap;
   margin: 0 auto;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     flex-direction: row;
   }
 
@@ -43,17 +43,17 @@
   line-height: 16px;
   color: $green-light;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     align-items: flex-start;
     width: 137px;
   }
 
-  @media(min-width: $desktop) {
+  @media (min-width: $desktop) {
     width: 97px;
   }
 
   &::after {
-    @media(max-width: $tablet) {
+    @media (max-width: $tablet) {
       content: "";
       flex-grow: 1;
       height: 1px;
@@ -141,7 +141,7 @@
   justify-content: center;
   align-items: stretch;
 
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     flex-flow: row nowrap;
     justify-content: space-between;
   }
@@ -163,7 +163,7 @@
 }
 
 .form__submit {
-  @media(min-width: $tablet) {
+  @media (min-width: $tablet) {
     order: -1;
   }
 }
