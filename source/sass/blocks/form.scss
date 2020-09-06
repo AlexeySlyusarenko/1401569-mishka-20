@@ -53,7 +53,7 @@
   }
 
   &::after {
-    @media (max-width: $tablet) {
+    @media (max-width: $tablet - 1px) {
       content: "";
       flex-grow: 1;
       height: 1px;

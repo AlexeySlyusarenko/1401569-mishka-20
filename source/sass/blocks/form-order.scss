@@ -7,51 +7,19 @@
 }
 
 .form-order__header {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
   width: 100%;
-  background-color: $white-dark;
-}
-
-.form-order__header-menu {
-  display: none;
-
-  @media (min-width: $tablet) {
-    display: block;
-  }
-
-  @include adaptive-width;
-}
-
-.form-order__header-text {
   margin: 0;
-  padding: 30px 30px 60px 30px;
-  font-weight: bold;
-  font-size: 27px;
-  line-height: 30px;
-  text-align: center;
-  color: $black;
-
-  @media (min-width: $tablet) {
-    font-size: 43px;
-    line-height: 50px;
-  }
-
-  @media (min-width: $desktop) {
-    font-size: 53px;
-    line-height: 57px;
-  }
 }
 
 .form-order__description {
-  margin: 30px 0;
+  margin: 16px 0 29px 0;
   padding: 0;
   font-size: 13px;
   line-height: 24px;
   color: $dark;
 
   @media (min-width: $tablet) {
+    margin: 58px 0 78px 0;
     font-size: 17px;
     line-height: 30px;
   }
