@@ -4,15 +4,20 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 30px;
+  padding: 18px 30px 23px 30px;
   font-weight: bold;
   font-size: 19px;
   line-height: 24px;
   color: $white;
 
   @media (min-width: $tablet) {
+    padding: 25px 30px 42px 36px;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 51px;
   }
 }
 

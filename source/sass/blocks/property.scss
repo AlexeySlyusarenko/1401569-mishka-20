@@ -1,5 +1,17 @@
 .property {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+}
+
+.property__cell {
+  margin: 0 0 5px 0;
+  padding: 0 30px 10px 0;
+  border-bottom: 1px solid $white-light;
   font-size: 15px;
   line-height: 24px;
   color: $dark;
+}
+
+.property__cell:nth-child(2n) {
+  padding-right: 0;
 }
