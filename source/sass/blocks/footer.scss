@@ -9,12 +9,14 @@
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: stretch;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 25px;
+  padding-bottom: 20px;
 
   @media (min-width: $tablet) {
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 44px;
+    padding-bottom: 45px;
   }
 
   @include adaptive-width;
@@ -26,5 +28,6 @@
 
   @media (min-width: $tablet) {
     display: block;
+    margin-top: 7px;
   }
 }

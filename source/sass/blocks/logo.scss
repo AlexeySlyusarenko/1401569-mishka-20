@@ -9,7 +9,7 @@
 .logo__img--mobile {
   display: none;
 
-  @media (max-width: $tablet) {
+  @media (max-width: $tablet - 1px) {
     display: block;
   }
 }
@@ -17,7 +17,7 @@
 .logo__img--tablet {
   display: none;
 
-  @media (min-width: $tablet) and (max-width: $desktop) {
+  @media (min-width: $tablet) and (max-width: $desktop - 1px) {
     display: block;
   }
 }
