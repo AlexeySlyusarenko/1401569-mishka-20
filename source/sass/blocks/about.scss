@@ -44,11 +44,12 @@
 .about__list {
   display: grid;
   grid-template-columns: 1fr;
-  grid-auto-flow: column;
+  grid-auto-flow: row;
 
   @media (min-width: $tablet) {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-flow: column;
     row-gap: 22px;
   }
 }
