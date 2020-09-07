@@ -30,12 +30,11 @@
   display: grid;
   grid-template-columns: 1fr;
   margin: 0;
+  border: 1px solid $white-light;
 
   @media (min-width: $desktop) {
     grid-template-columns: 682px 367px;
   }
-
-  border: 1px solid $white-light;
 }
 
 .process__header {
@@ -77,7 +76,6 @@
   position: relative;
   padding-bottom: 56.25%;
   overflow: hidden;
-
   background-color: $white-light-1;
   background-image: url("../img/video-mobile@1x.jpg");
   background-size: cover;
