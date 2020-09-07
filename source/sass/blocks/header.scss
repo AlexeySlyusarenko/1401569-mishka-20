@@ -152,6 +152,8 @@
   line-height: 24px;
   color: $black;
 
+  @include event-opacity;
+
   @media (max-width: $tablet - 1px) {
     width: $mobile;
     box-sizing: border-box;
@@ -255,6 +257,8 @@
 }
 
 .header__hit-item-link {
+  @include event-opacity;
+
   @media (min-width: $tablet) {
     padding: 20px 50px;
     font-weight: bold;
@@ -281,6 +285,8 @@
   font-size: 15px;
   line-height: 24px;
   color: $dark;
+
+  @include event-opacity;
 
   @media (min-width: $tablet) {
     padding: 20px 20px;

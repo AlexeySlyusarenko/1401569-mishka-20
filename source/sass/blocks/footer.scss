@@ -26,6 +26,8 @@
   display: none;
   fill: $black;
 
+  @include event-green-opacity;
+
   @media (min-width: $tablet) {
     display: block;
     margin-top: 7px;

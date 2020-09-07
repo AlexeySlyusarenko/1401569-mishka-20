@@ -73,7 +73,11 @@
 }
 
 .about__item:nth-child(2) .about__item-logo {
-  margin: 2px 0 22px 0;
+  margin: 8px 0 20px 0;
+
+  @media (min-width: $tablet) {
+    margin-top: 5px;
+  }
 }
 
 .about__item:nth-child(3) .about__item-logo {
@@ -84,7 +88,7 @@
   margin: 11px 0 11px 3px;
 
   @media (min-width: $tablet) {
-    margin-bottom: 4px;
+    margin: 4px 0 11px 3px;
   }
 
   @media (min-width: $desktop) {

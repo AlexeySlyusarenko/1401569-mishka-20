@@ -1,4 +1,44 @@
-.products {
+.products:nth-child(2n) {
+  background-color: $green;
+}
+
+.products:nth-child(2n):hover {
+  background-color: $green-light-1;
+
+  & svg {
+    opacity: 0.7;
+  }
+}
+
+.products:nth-child(2n):active {
+  background-color: $green-light-1;
+
+  & svg {
+    opacity: 0.5;
+  }
+}
+
+.products:nth-child(2n + 1) {
+  background-color: $green-light;
+}
+
+.products:nth-child(2n + 1):hover {
+  background-color: $green-1;
+
+  & svg {
+    opacity: 0.7;
+  }
+}
+
+.products:nth-child(2n + 1):active {
+  background-color: $green-1;
+
+  & svg {
+    opacity: 0.5;
+  }
+}
+
+.products__link {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -22,5 +62,21 @@
 }
 
 .products__logo {
+  position: relative;
   fill: $green-dark-alfa-5;
+
+  &--interior {
+    top: 5px;
+    left: -5px;
+  }
+
+  &--toy {
+    top: 4px;
+    left: 4px;
+
+    @media (min-width: $desktop) {
+      top: 6px;
+      left: -4px;
+    }
+  }
 }

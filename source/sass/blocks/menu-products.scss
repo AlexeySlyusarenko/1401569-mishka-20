@@ -3,7 +3,7 @@
   flex-flow: column nowrap;
   align-items: center;
   position: relative;
-  margin-bottom: 33px;
+  margin-bottom: 2px;
   background-color: $dark-light;
   background-repeat: no-repeat;
   background-position: center -20px;
@@ -101,12 +101,4 @@
   flex-grow: 1;
   display: flex;
   justify-content: center;
-}
-
-.menu-products__item:nth-child(2n) {
-  background-color: $green;
-}
-
-.menu-products__item:nth-child(2n + 1) {
-  background-color: $green-light;
 }

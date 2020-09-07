@@ -23,6 +23,12 @@
   }
 }
 
+.social__link {
+  svg {
+    @include event-green-opacity;
+  }
+}
+
 .social__logo {
   fill: $black-light;
 }

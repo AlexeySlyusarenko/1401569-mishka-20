@@ -17,6 +17,12 @@
   }
 }
 
+.developer__link {
+  svg {
+    @include event-green-opacity;
+  }
+}
+
 .developer__logo {
   width: 38px;
   height: auto;

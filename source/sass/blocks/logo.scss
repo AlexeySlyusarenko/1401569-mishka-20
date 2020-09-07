@@ -1,6 +1,6 @@
-// .logo {
-
-// }
+.logo {
+  @include event-opacity;
+}
 
 .logo__img {
   fill: $black;
