@@ -2,13 +2,13 @@
   box-sizing: border-box;
 
   @media (max-width: $tablet) {
-    width: $mobile;
+    width: 100%;
     padding-left: $pad-mobile;
     padding-right: $pad-mobile;
   }
 
   @media (min-width: $tablet) {
-    width: $tablet;
+    width: 100%;
     padding-left: $pad-tablet;
     padding-right: $pad-tablet;
   }
@@ -24,7 +24,7 @@
   box-sizing: border-box;
 
   @media (max-width: $tablet) {
-    width: $mobile;
+    width: 100%;
     padding-left: $pad-mobile;
     padding-right: $pad-mobile;
   }
@@ -39,5 +39,46 @@
     width: $desktop;
     padding-left: $pad-desktop-1;
     padding-right: $pad-desktop-2;
+  }
+}
+
+@mixin separator-small($width: 100%) {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: $width;
+  box-sizing: border-box;
+  height: 6px;
+  background-image: url("../../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-size: auto 6px;
+}
+
+@mixin event-opacity {
+  &:hover {
+    color: $black-alfa-6;
+  }
+
+  &:active {
+    color: $black-alfa-3;
+  }
+
+  &:hover svg {
+    fill: $green-light;
+  }
+
+  &:active svg {
+    fill: $green-light-alfa-3;
+  }
+}
+
+@mixin event-green-opacity {
+  &:hover {
+    fill: $green-1;
+  }
+
+  &:active {
+    fill: $green-1-alfa-3;
   }
 }

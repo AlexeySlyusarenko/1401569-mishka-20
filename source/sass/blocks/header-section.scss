@@ -1,0 +1,28 @@
+.header-section {
+  padding-top: 72px;
+  padding-bottom: 74px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 27px;
+  line-height: 30px;
+  color: $black;
+  background-color: $white-dark;
+
+  @media (min-width: $tablet) {
+    padding-top: 37px;
+    padding-bottom: 84px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    background-size: auto 23px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 115px;
+    background-size: auto 36px;
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

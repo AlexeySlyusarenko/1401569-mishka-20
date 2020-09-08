@@ -14,11 +14,13 @@
 }
 
 .page__header {
+  z-index: 10;
   position: relative;
   width: 100%;
 }
 
 .page__content {
+  z-index: 5;
   flex-grow: 1;
   position: relative;
   width: 100%;
@@ -29,6 +31,7 @@
 }
 
 .page__footer {
+  z-index: 10;
   position: relative;
   width: 100%;
 }

@@ -3,11 +3,12 @@
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  padding: 10px 15px;
+  padding: 14px 15px;
   background: none;
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
+  text-transform: uppercase;
   color: $dark;
   border: 2px solid $dark;
 
@@ -16,6 +17,36 @@
   }
 }
 
+.button:hover {
+  color: $white;
+  background-color: $dark;
+}
+
+.button:active {
+  color: $white-alfa-3;
+  background-color: $dark;
+}
+
 .button--border-light {
   border-color: $white-light;
+}
+
+.button--border-light:hover {
+  background: none;
+
+  & .button__icon {
+    fill: $black-alfa-6;
+  }
+}
+
+.button--border-light:active {
+  background: none;
+
+  & .button__icon {
+    fill: $black-alfa-3;
+  }
+}
+
+.button--icon {
+  fill: $black;
 }
