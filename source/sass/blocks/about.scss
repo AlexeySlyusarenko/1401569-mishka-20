@@ -3,6 +3,14 @@
   justify-content: center;
   position: relative;
   margin-bottom: 37px;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 62px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 68px;
+  }
 }
 
 .about__wrapper {

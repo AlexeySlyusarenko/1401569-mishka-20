@@ -13,6 +13,7 @@
   border: 2px solid $dark;
 
   @media (min-width: $tablet) {
+    padding: 14px 17px;
     font-size: 17px;
   }
 }
@@ -29,21 +30,25 @@
 
 .button--border-light {
   border-color: $white-light;
-}
 
-.button--border-light:hover {
-  background: none;
+  &:hover {
+    background: none;
 
-  & .button__icon {
-    fill: $black-alfa-6;
+    & .button__icon {
+      fill: $black-alfa-6;
+    }
   }
-}
 
-.button--border-light:active {
-  background: none;
+  &:active {
+    background: none;
 
-  & .button__icon {
-    fill: $black-alfa-3;
+    & .button__icon {
+      fill: $black-alfa-3;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    border-color: transparent;
   }
 }
 
