@@ -299,9 +299,11 @@
 
 .header__button-menu {
   position: absolute;
-  top: 30px;
-  right: 25px;
+  z-index: 50;
+  top: 12px;
+  right: 12px;
   margin: 0;
+  padding: 20px;
   border: none;
   background: none;
 }
