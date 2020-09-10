@@ -6,7 +6,7 @@ let productTopButtonOrderElem = document.querySelector(".product-top__button-ord
 let productCardButtonOrderArr = document.querySelectorAll('.product-card__button-order');
 
 let modalElem = document.querySelector(".modal"),
-  modalButtonAddElem = modalElem.querySelector(".modal__button-add");
+  modalButtonSubmitElem = modalElem.querySelector(".modal__button-submit");
 
 headerElem.classList.remove('header--nojs');
 headerButtonElem.addEventListener('click', (e) => {
@@ -35,14 +35,10 @@ for (let i = 0; i < productCardButtonOrderArr.length; i++) {
   }
 }
 
-if (modalButtonAddElem) {
-  // modalElem.addEventListener('click', (e) => {
-  //   e.preventDefault();
-  //   modalElem.classList.remove('modal--show');
-  // });
+if (modalButtonSubmitElem) {
 
-    modalButtonAddElem.addEventListener('click', (e) => {
-      e.preventDefault();
-      modalElem.classList.remove('modal--show');
-    });
-  }
+  modalButtonSubmitElem.addEventListener('click', (e) => {
+    e.preventDefault();
+    modalElem.classList.remove('modal--show');
+  });
+}

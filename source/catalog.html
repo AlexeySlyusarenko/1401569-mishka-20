@@ -339,20 +339,29 @@
         <p class="modal__text">
           Выберите размер:
         </p>
-        <div class="modal__select">
-          <button class="modal__select-button modal__select-button--active" type="button">
-            S
+        <form action="#" metothod="post" class="modal__form">
+          <label class="modal__form-label">
+            <input type="radio" class="visually-hidden" name="size" value="s" checked>
+            <span class="modal__form-checkbox">
+              S
+            </span>
+          </label>
+          <label class="modal__form-label">
+            <input type="radio" class="visually-hidden" name="size" value="m">
+            <span class="modal__form-checkbox">
+              M
+            </span>
+          </label>
+          <label class="modal__form-label">
+            <input type="radio" class="visually-hidden" name="size" value="l">
+            <span class="modal__form-checkbox">
+              L
+            </span>
+          </label>
+          <button class="modal__button-submit" type="button">
+            Добавить
           </button>
-          <button class="modal__select-button" type="button">
-            M
-          </button>
-          <button class="modal__select-button" type="button">
-            L
-          </button>
-        </div>
-        <button class="modal__button-add" type="button">
-          Добавить
-        </button>
+        </form>
       </div>
     </section>
     <script src="js/app.js"></script>
