@@ -22,6 +22,7 @@
 
   @media (min-width: $tablet) {
     width: $tablet;
+    box-sizing: border-box;
     margin: 58px 0 10px 0;
     padding: 0 50px;
     font-size: 17px;
@@ -30,6 +31,8 @@
 
   @media (min-width: $desktop) {
     width: $desktop;
+    margin: 98px 0 10px 0;
+    padding: 0 225px 0 225px;
   }
 }
 
