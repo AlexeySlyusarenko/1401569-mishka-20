@@ -50,9 +50,35 @@
   width: $width;
   box-sizing: border-box;
   height: 6px;
-  background-image: url("../../img/bg-zigzag-line.svg");
+  background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
   background-size: auto 6px;
+}
+
+@mixin separator-medium($width: 100%) {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: $width;
+  box-sizing: border-box;
+  height: 16px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-size: auto 16px;
+}
+
+@mixin separator-large($width: 100%) {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: $width;
+  box-sizing: border-box;
+  height: 23px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-size: auto 23px;
 }
 
 @mixin event-opacity {

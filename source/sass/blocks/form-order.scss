@@ -3,7 +3,7 @@
   flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: center;
-  margin: 0;
+  margin: 0 0 25px 0;
 }
 
 .form-order__header {
@@ -12,19 +12,28 @@
 }
 
 .form-order__description {
-  margin: 16px 0 29px 0;
-  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0 20px 0;
+  padding: 0 30px;
   font-size: 13px;
   line-height: 24px;
   color: $dark;
 
   @media (min-width: $tablet) {
-    margin: 58px 0 78px 0;
+    width: $tablet;
+    box-sizing: border-box;
+    margin: 58px 0 10px 0;
+    padding: 0 50px;
     font-size: 17px;
     line-height: 30px;
   }
 
-  @include adaptive-width(30px, 50px, 225px);
+  @media (min-width: $desktop) {
+    width: $desktop;
+    margin: 98px 0 10px 0;
+    padding: 0 225px 0 225px;
+  }
 }
 
 .form-order__form {

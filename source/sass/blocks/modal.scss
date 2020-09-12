@@ -1,0 +1,124 @@
+.modal {
+  display: none;
+
+  &--show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    background-color: $white-alfa-9;
+  }
+}
+
+.modal__wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  width: $mobile;
+  min-height: 336px;
+  box-sizing: border-box;
+  padding: 29px 30px 46px 30px;
+  background-color: $white;
+  box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
+
+  @media (min-width: $tablet) {
+    width: 566px;
+    padding: 38px 100px 46px 100px;
+  }
+}
+
+.modal__header {
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    font-size: 30px;
+    line-height: 57px;
+
+    br {
+      display: none;
+    }
+  }
+}
+
+.modal__text {
+  font-size: 15px;
+  line-height: 30px;
+  margin: 0 0 8px 0;
+  text-align: center;
+  color: $dark;
+
+  @media (min-width: $tablet) {
+    font-size: 17px;
+  }
+}
+
+.modal__form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  position: relative;
+
+  @media (min-width: $tablet) {
+    margin-left: 9px;
+    margin-right: 9px;
+  }
+}
+
+.modal__form-label {
+  flex-grow: 1;
+  margin: 0 7px 32px 0;
+  text-align: center;
+  cursor: pointer;
+
+  &:last-of-type {
+    margin: 0 0 32px 0;
+  }
+}
+
+.modal__form-checkbox {
+  display: block;
+  padding: 15px 20px;
+  border: 2px solid $dark-alfa-1;
+  background: none;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  color: $dark;
+  text-transform: uppercase;
+
+  &:hover {
+    border-color: $dark-alfa-3;
+  }
+
+  &:active {
+    border-color: $green-2;
+  }
+
+  input:checked + & {
+    border-color: $green-2;
+  }
+}
+
+.modal__button-submit {
+  width: 100%;
+  margin: 0;
+  padding: 18px 30px;
+  border: none;
+  background-color: $green-light;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 16px;
+  color: $white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
