@@ -123,7 +123,7 @@
 .product-top__img {
   grid-area: 4 / 1 / 5 / 3;
   width: 100%;
-  height: auto;
+  height: 100%;
   background-color: $green-light;
 
   @media (min-width: $tablet) and (max-width: $desktop - 1px) {

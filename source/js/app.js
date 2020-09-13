@@ -1,12 +1,19 @@
 let headerElem = document.querySelector('.header'),
-  headerButtonElem = headerElem.querySelector('.header__button-menu');
+  headerButtonElem = undefined;
+if (headerElem) headerButtonElem = headerElem.querySelector('.header__button-menu');
+
 
 let productTopButtonOrderElem = document.querySelector(".product-top__button-order");
 
 let productCardButtonOrderArr = document.querySelectorAll('.product-card__button-order');
 
 let modalElem = document.querySelector(".modal"),
+  modalButtonSubmitElem = undefined,
+  modalButtonBgElem = undefined;
+if (modalElem) {
   modalButtonSubmitElem = modalElem.querySelector(".modal__button-submit");
+  modalButtonBgElem = modalElem.querySelector(".modal__bg");
+}
 
 headerElem.classList.remove('header--nojs');
 headerButtonElem.addEventListener('click', (e) => {
@@ -35,10 +42,14 @@ for (let i = 0; i < productCardButtonOrderArr.length; i++) {
   }
 }
 
-if (modalButtonSubmitElem) {
+// if (modalButtonSubmitElem) {
+//   modalButtonSubmitElem.addEventListener('click', () => {
+//     modalElem.classList.remove('modal--show');
+//   });
+// }
 
-  modalButtonSubmitElem.addEventListener('click', (e) => {
-    e.preventDefault();
+if (modalButtonBgElem) {
+  modalButtonBgElem.addEventListener('click', () => {
     modalElem.classList.remove('modal--show');
   });
 }

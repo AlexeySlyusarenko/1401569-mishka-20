@@ -11,11 +11,22 @@
     left: 0;
     width: 100%;
     min-height: 100%;
-    background-color: $white-alfa-9;
   }
 }
 
+.modal__bg {
+  position: fixed;
+  z-index: 90;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100%;
+  background-color: $white-alfa-9;
+}
+
 .modal__wrapper {
+  position: relative;
+  z-index: 100;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
