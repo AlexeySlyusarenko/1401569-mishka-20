@@ -1,40 +1,85 @@
-.products:nth-child(2n) {
-  background-color: $green;
-}
+.products {
+  position: relative;
+  top: 0;
 
-.products:nth-child(2n):hover {
-  background-color: $green-light-1;
+  &:hover,
+  &:active {
+    top: -5px;
 
-  & svg {
-    opacity: 0.7;
+    @media (max-width: $tablet - 1px) {
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+        height: 5px;
+      }
+    }
   }
 }
 
-.products:nth-child(2n):active {
-  background-color: $green-light-1;
+.products:nth-child(2n) {
+  background-color: $green;
 
-  & svg {
-    opacity: 0.5;
+  &:hover {
+    background-color: $green-1;
+
+    & svg {
+      opacity: 0.7;
+    }
+
+    @media (max-width: $tablet - 1px) {
+      &::after {
+        background-color: $green-1;
+      }
+    }
+  }
+
+  &:active {
+    background-color: $green-1;
+
+    & svg {
+      opacity: 0.5;
+    }
+
+    @media (max-width: $tablet - 1px) {
+      &::after {
+        background-color: $green-1;
+      }
+    }
   }
 }
 
 .products:nth-child(2n + 1) {
   background-color: $green-light;
-}
 
-.products:nth-child(2n + 1):hover {
-  background-color: $green-1;
+  &:hover {
+    background-color: $green-light-1;
 
-  & svg {
-    opacity: 0.7;
+    & svg {
+      opacity: 0.7;
+    }
+
+    @media (max-width: $tablet - 1px) {
+      &::after {
+        background-color: $green-light-1;
+      }
+    }
   }
-}
 
-.products:nth-child(2n + 1):active {
-  background-color: $green-1;
+  &:active {
+    background-color: $green-light-1;
 
-  & svg {
-    opacity: 0.5;
+    & svg {
+      opacity: 0.5;
+    }
+
+    @media (max-width: $tablet - 1px) {
+      &::after {
+        background-color: $green-light-1;
+      }
+    }
   }
 }
 

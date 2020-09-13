@@ -199,6 +199,15 @@
 .contact__map-img {
   position: absolute;
   z-index: 50;
+  width: 320px;
+
+  @media (min-width: $tablet) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 100%;
+  }
 }
 
 .contact__map-pin {
