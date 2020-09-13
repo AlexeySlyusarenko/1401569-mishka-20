@@ -300,7 +300,8 @@ input:disabled ~ .form__input-icon {
   }
 
   &--tel:hover,
-  &--tel:active {
+  &--tel:active,
+  &--tel:focus {
     background-image: url("../img/icon-phone-green.svg");
   }
 
@@ -321,7 +322,8 @@ input:disabled ~ .form__input-icon {
   }
 
   &--mail:hover,
-  &--mail:active {
+  &--mail:active,
+  &--mail:focus {
     background-image: url("../img/icon-mail-green.svg");
   }
 }
@@ -378,7 +380,8 @@ input:disabled ~ .form__input-icon {
   }
 
   &:hover,
-  &:active {
+  &:active,
+  &:focus {
     border-color: $green-2;
   }
 }
