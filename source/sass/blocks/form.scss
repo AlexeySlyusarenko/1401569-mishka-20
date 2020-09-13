@@ -278,7 +278,8 @@ input:disabled ~ .form__input-icon {
   }
 
   &:hover,
-  &:active {
+  &:active,
+  &:focus {
     border-color: $green-2;
   }
 
