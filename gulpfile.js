@@ -68,7 +68,8 @@ const buildImages = () => {
         plugins: [
           {removeViewBox: false},
           {cleanupIDs: false},
-          {convertPathData: { floatPrecision: 1 }}
+          {convertPathData: { floatPrecision: 1 }},
+          {cleanupListOfValues: { floatPrecision: 1 }}
         ]
       })
     ]))
@@ -93,7 +94,8 @@ const buildSVG = () => {
         plugins: [
           {removeViewBox: false},
           {cleanupIDs: false},
-          {convertPathData: { floatPrecision: 1 }}
+          {convertPathData: { floatPrecision: 1 }},
+          {cleanupListOfValues: { floatPrecision: 1 }}
         ]
       })
     ]))
