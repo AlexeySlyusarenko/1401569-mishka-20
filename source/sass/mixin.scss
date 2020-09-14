@@ -68,12 +68,12 @@
   background-size: auto 16px;
 }
 
-@mixin separator-large($width: 100%) {
+@mixin separator-large($width: $desktop) {
   content: "";
   position: absolute;
-  left: 0;
+  left: 50px;
   bottom: 0;
-  width: $width;
+  width: $width - 100px;
   box-sizing: border-box;
   height: 23px;
   background-image: url("../img/bg-zigzag-line.svg");
