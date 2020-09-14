@@ -241,6 +241,10 @@
   }
 }
 
+input:focus ~ .form__input-icon {
+  outline: 2px solid $orange;
+}
+
 input:checked ~ .form__input-icon--active {
   display: block;
 }

@@ -85,6 +85,9 @@
 .header__menu-list {
   display: flex;
   flex-flow: column nowrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 
   @media (min-width: $tablet) {
     flex-flow: row wrap;
@@ -243,6 +246,9 @@
 
 .header__hit-list {
   display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 
   @media (min-width: $desktop) {
     display: flex;

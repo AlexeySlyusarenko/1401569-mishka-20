@@ -15,8 +15,8 @@
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 30px 0;
+  list-style: none;
 
   @media (min-width: $tablet) {
     margin-top: 68px;
