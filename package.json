@@ -18,7 +18,6 @@
     "gulp-svgstore": "^7.0.1",
     "gulp-uglify-es": "^2.0.0",
     "gulp-webp": "^4.0.1",
-    "nvm": "0.0.4",
     "stylelint": "13.6.1",
     "stylelint-config-htmlacademy": "0.1.4"
   },
