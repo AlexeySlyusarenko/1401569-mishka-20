@@ -67,7 +67,8 @@ const buildImages = () => {
       imagemin.svgo({
         plugins: [
           {removeViewBox: false},
-          {cleanupIDs: false}
+          {cleanupIDs: false},
+          {convertPathData: { floatPrecision: 1 }}
         ]
       })
     ]))
@@ -91,7 +92,8 @@ const buildSVG = () => {
       imagemin.svgo({
         plugins: [
           {removeViewBox: false},
-          {cleanupIDs: false}
+          {cleanupIDs: false},
+          {convertPathData: { floatPrecision: 1 }}
         ]
       })
     ]))
