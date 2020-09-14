@@ -24,7 +24,7 @@
               </g>
             </svg>
             <svg class="logo__img logo__img--tablet" width="112.389px" height="46.087px" viewBox="19.137 15.003 112.389 46.087">
-              <g id="Layer_2">
+              <g id="Layer_3">
                 <g>
                   <path d="M129.364,56.884c4.394,0.868,0.843-35.858,0.147-38.311c-1.96-6.569-26.677-2.144-32.18-1.717 c-12.723,0.987-25.189-0.96-37.611-0.376c-6.205,0.292-34.854-1.813-37.519,1.986c-5.048,7.208-2.652,25.797-1.278,35.076 c-4.043,0.779,2.309,4.154,3.138,4.897c6.314,2.192,16.358-0.219,23.007,0.396c15.434,1.472,31.797-2.194,47.276-0.955 c4.496,1.144,9.604,1.019,14.224,1.239C111.982,64.691,128.232,56.658,129.364,56.884 C129.264,56.864,129.871,56.984,129.364,56.884z"/>
                 </g>
@@ -154,10 +154,13 @@
         </p>
         <form class="form-order__form form" action="https://echo.htmlacademy.ru">
           <fieldset class="form__fieldset">
+            <legend class="visually-hidden">
+              Тип
+            </legend>
             <div class="form__fieldset-wrapper">
-              <legend class="form__legend">
+              <span class="form__legend">
                 Тип
-              </legend>
+              </span>
               <div class="form__input-area-wrapper">
                 <label class="form__input-area-label">
                   <input type="radio" class="visually-hidden" name="type" value="0" checked>
@@ -183,10 +186,13 @@
             </div>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--bg-dark">
+            <legend class="visually-hidden">
+              Цвет
+            </legend>
             <div class="form__fieldset-wrapper">
-              <legend class="form__legend">
+              <span class="form__legend">
                 Цвет
-              </legend>
+              </span>
               <div class="form__input-area-wrapper form__input-area-wrapper--grid">
                 <label class="form__input-area-label">
                   <input type="checkbox" class="visually-hidden" name="color-white" checked>
@@ -252,10 +258,13 @@
             </div>
           </fieldset>
           <fieldset class="form__fieldset form__fieldset--mb-10">
+            <legend class="visually-hidden">
+              ФИО
+            </legend>
             <div class="form__fieldset-wrapper form__fieldset-wrapper--pr-225">
-              <legend class="form__legend">
+              <span class="form__legend">
                 ФИО
-              </legend>
+              </span>
               <div class="form__input-area-wrapper">
                 <label class="form__input-area-label form__input-area-label--name">
                   Имя:
@@ -272,30 +281,30 @@
               </div>
             </div>
           </fieldset>
-          <label class="form__fieldset form__fieldset--bg-dark form__fieldset--tel">
-            <div class="form__fieldset-wrapper">
+          <div class="form__fieldset form__fieldset--bg-dark form__fieldset--tel">
+            <label class="form__fieldset-wrapper">
               <span class="form__legend form__legend--input-tel">
                 Тел
               </span>
               <input type="tel" class="form__input-area-text form__input-area-text--tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" name="telephone" pattern="^\+7\s\d{3}\s\d{3}\s\d{2}\s\d{2}$" required>
-            </div>
-          </label>
-          <label class="form__fieldset form__fieldset--bg-dark form__fieldset--email">
-            <div class="form__fieldset-wrapper">
+            </label>
+          </div>
+          <div class="form__fieldset form__fieldset--bg-dark form__fieldset--email">
+            <label class="form__fieldset-wrapper">
               <span class="form__legend form__legend--input-tel">
                 E-mail
               </span>
               <input type="email" class="form__input-area-text form__input-area-text--mail" placeholder="Ваш Email*" name="e-mail" required>
-            </div>
-          </label>
-          <label class="form__fieldset form__fieldset--textarea">
-            <div class="form__fieldset-wrapper">
+            </label>
+          </div>
+          <div class="form__fieldset form__fieldset--textarea">
+            <label class="form__fieldset-wrapper">
               <span class="form__legend form__legend--input-tel">
                 Доп
               </span>
               <textarea class="form__textarea" placeholder="Опишите все ваши пожелания к заказу" name="feedback"></textarea>
-            </div>
-          </label>
+            </label>
+          </div>
           <div class="form__wrapper">
             <p class="form__text">
               <sup>*</sup>Поля обязательны для заполнения
