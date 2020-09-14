@@ -16,8 +16,8 @@ const svgstore = require('gulp-svgstore');
 // Build
 
 const buildClear = () => {
-  return gulp.src("build", {read: false})
-        .pipe(clean());
+  return gulp.src("./build", {read: false, allowEmpty: true})
+    .pipe(clean());
 }
 
 exports.buildClear = buildClear;
