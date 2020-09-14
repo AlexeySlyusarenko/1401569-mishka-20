@@ -171,6 +171,7 @@
   line-height: 18px;
   color: $black;
   user-select: none;
+  cursor: pointer;
 
   @media (min-width: $tablet) {
     margin-bottom: 25px;
@@ -191,11 +192,11 @@
     }
   }
 
-  &:hover .form__input-icon-border {
+  &:hover .form__input-icon--border {
     stroke: $green-2;
   }
 
-  &:active .form__input-icon-border {
+  &:active .form__input-icon--border {
     stroke: $black-alfa-3;
   }
 }
@@ -229,14 +230,23 @@
     height: 52px;
     margin-right: 27px;
   }
+
+  &--border {
+    stroke: $dark;
+  }
+
+  &--active {
+    display: none;
+    position: absolute;
+  }
 }
 
-.form__input-icon-hidden {
-  display: none;
-}
-
-input:checked ~ svg .form__input-icon-hidden {
+input:checked ~ .form__input-icon--active {
   display: block;
+}
+
+input:disabled ~ .form__input-icon {
+  opacity: 0.3;
 }
 
 .form__input-area-text {
@@ -268,7 +278,8 @@ input:checked ~ svg .form__input-icon-hidden {
   }
 
   &:hover,
-  &:active {
+  &:active,
+  &:focus {
     border-color: $green-2;
   }
 
@@ -289,7 +300,8 @@ input:checked ~ svg .form__input-icon-hidden {
   }
 
   &--tel:hover,
-  &--tel:active {
+  &--tel:active,
+  &--tel:focus {
     background-image: url("../img/icon-phone-green.svg");
   }
 
@@ -310,7 +322,8 @@ input:checked ~ svg .form__input-icon-hidden {
   }
 
   &--mail:hover,
-  &--mail:active {
+  &--mail:active,
+  &--mail:focus {
     background-image: url("../img/icon-mail-green.svg");
   }
 }
@@ -367,7 +380,8 @@ input:checked ~ svg .form__input-icon-hidden {
   }
 
   &:hover,
-  &:active {
+  &:active,
+  &:focus {
     border-color: $green-2;
   }
 }

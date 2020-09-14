@@ -82,19 +82,19 @@
 }
 
 @mixin event-opacity {
-  &:hover {
+  &[href]:hover {
     color: $black-alfa-6;
   }
 
-  &:active {
+  &[href]:active {
     color: $black-alfa-3;
   }
 
-  &:hover svg {
+  &[href]:hover svg {
     fill: $green-light;
   }
 
-  &:active svg {
+  &[href]:active svg {
     fill: $green-light-alfa-3;
   }
 }
