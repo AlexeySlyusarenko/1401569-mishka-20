@@ -12,6 +12,7 @@ const uglify = require('gulp-uglify-es').default;
 const imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp');
 const svgstore = require('gulp-svgstore');
+const htmlmin = require('gulp-htmlmin');
 
 // Build
 
@@ -47,6 +48,7 @@ exports.buildJS = buildJS;
 
 const buildHTML = () => {
   return gulp.src("source/*.html")
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 }
 
