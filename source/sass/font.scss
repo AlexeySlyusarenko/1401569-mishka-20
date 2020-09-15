@@ -1,12 +1,5 @@
-/* Правильно ли я задал font-face
-для последующего задания стилий элементов с помощью
-  font-style
-  font-weight
-  и чтобы не менять шрифты в свойствах элементов?
-*/
-
 @font-face {
-  font-display: block;
+  font-display: swap;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: normal;
